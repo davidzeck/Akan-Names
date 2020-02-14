@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./akan-name_files/script.js"></script>
+    <link rel="stylesheet" href="./akan-name_files/bootstrap.css">
+    <link rel="stylesheet" href="./akan-name_files/style.css">
+    
+    <title>akan-name</title>
+</head>
+<body>
+    <center>
+        <h1>African Heritage</h1>
+        
+    </center>
+    <div class="info border container p-2 m-4">
+        <h1>CONTEXT</h1>
+        <p>Akan names are come from a Ghanain tradition,of naming there children according to the day of the week they were born,
+            you might refer to it as a "day name"
+        </p>
+        <p>After filling this form you can also find out your 
+            Akan name following these instructions;
+        </p>
+        <h2>instructions</h2>
+        <li>Enter your full name in the space provided</li>
+        <li>Put in the date of your birth</li>
+        <li>Input your gender</li>
+        <p>Your Akan name will automatically show inthe blank space below!</p>
+    </div>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+
+        <form action="http://127.0.0.1:5500/index.html" class="p-2 form-horizontal border formh">
+            <h2>Entry Form</h2>
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+                <label for="male"> <input name="gender" type="radio" id="gender">Male</label>
+                <label for="female"><input name="gender" type="radio" id="gender">Female</label>
+            </div>
+            <div class="form-group">
+                <input value="Submit" class="btn btn-primary" onclick="submt()">
+                <input type="reset" class="btn btn-danger">
+            </div>
+            <div class="form-group">
+                <label for="akan">Your Akan Name!</label>
+                <input type="text" class="form-control" name="" id="akan" disabled=""> 
+            </div>
+
+
+
+        </form>
+    </div>
+</div>    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

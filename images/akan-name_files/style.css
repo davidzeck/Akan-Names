@@ -1,0 +1,12 @@
+body{
+    background-image:url("../images/afrikana.jpg")
+    
+}
+h1{
+    font-style: italic;
+    
+    
+} 
+.formh {
+    background: rgba(255,255,255,.7);
+}
