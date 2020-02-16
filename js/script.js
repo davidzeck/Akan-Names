@@ -13,4 +13,6 @@ function submt(){
          var femaleName=("Akosua" , "Adwoa" , "Abenaa" , "Akua" , "Yaa" , " Afua" , "Ama" )
          alert(femaleName);
      }
+     var dayofweek =("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+     
 }
